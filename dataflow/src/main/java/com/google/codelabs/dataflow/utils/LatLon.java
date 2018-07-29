@@ -16,7 +16,8 @@
 
 package com.google.codelabs.dataflow.utils;
 
-import com.google.cloud.dataflow.sdk.coders.*;
+import org.apache.beam.sdk.coders.AvroCoder;
+import org.apache.beam.sdk.coders.DefaultCoder;
 
 @DefaultCoder(AvroCoder.class)
 public class LatLon {
